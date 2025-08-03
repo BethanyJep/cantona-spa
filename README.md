@@ -32,13 +32,13 @@ In `index.html`, update the following:
 
 ```html
 <!-- Phone number -->
-<p>+1 (555) 123-4567</p>
+<p>+2547-123-4567</p>
 
 <!-- Email -->
 <p>info@cantonaspa.com</p>
 
 <!-- Address -->
-<p>123 Beauty Street<br>Your City, State 12345</p>
+<p>123 Beauty Street<br>Kikuyu, Nairobi</p>
 
 <!-- Business Hours -->
 <p>Mon-Fri: 9AM-7PM<br>Sat: 9AM-6PM<br>Sun: 10AM-5PM</p>
