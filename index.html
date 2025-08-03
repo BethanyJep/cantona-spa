@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantona Spa - Dreadlocks, Sister Locks & Beauty Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Cantona Spa</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Cantona Spa</h1>
+            <p class="hero-subtitle">Expert Dreadlocks, Sister Locks & Premium Beauty Services</p>
+            <p class="hero-description">Transform your look with our specialized hair services and rejuvenating beauty treatments. Professional care for your unique style.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">View Services</a>
+                <a href="#contact" class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <i class="fas fa-spa"></i>
+                <p>Beautiful Spa Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Specialized care for your hair and beauty needs</p>
+            
+            <div class="services-grid">
+                <!-- Hair Services -->
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Dreadlocks</h3>
+                    <p>Professional dreadlock installation, maintenance, and styling. We specialize in all types of dreadlocks for all hair textures.</p>
+                    <ul class="service-features">
+                        <li>New dreadlock installation</li>
+                        <li>Dreadlock maintenance & tightening</li>
+                        <li>Root touch-ups</li>
+                        <li>Dreadlock styling</li>
+                    </ul>
+                    <button class="btn btn-book" onclick="bookService('Dreadlocks Service', 'Starting from $80')">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Sister Locks</h3>
+                    <p>Precision sister lock installation and maintenance. Experience the beauty and versatility of this refined locking technique.</p>
+                    <ul class="service-features">
+                        <li>Sister lock installation</li>
+                        <li>Retightening sessions</li>
+                        <li>Sister lock styling</li>
+                        <li>Consultation & planning</li>
+                    </ul>
+                    <button class="btn btn-book" onclick="bookService('Sister Locks Service', 'Starting from $120')">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                </div>
+
+                <!-- Beauty Services -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Manicure & Pedicure</h3>
+                    <p>Pamper your hands and feet with our professional nail care services. Choose from classic to luxury treatments.</p>
+                    <ul class="service-features">
+                        <li>Classic manicure & pedicure</li>
+                        <li>Gel nail polish</li>
+                        <li>Nail art & designs</li>
+                        <li>Cuticle care</li>
+                    </ul>
+                    <button class="btn btn-book" onclick="bookService('Manicure & Pedicure', 'Manicure: $35, Pedicure: $45')">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Facials</h3>
+                    <p>Rejuvenate your skin with our customized facial treatments. Deep cleansing, hydration, and anti-aging solutions.</p>
+                    <ul class="service-features">
+                        <li>Deep cleansing facial</li>
+                        <li>Hydrating treatments</li>
+                        <li>Anti-aging facials</li>
+                        <li>Acne treatment</li>
+                    </ul>
+                    <button class="btn btn-book" onclick="bookService('Facial Treatment', 'Starting from $60')">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Eyebrow Services</h3>
+                    <p>Perfect your look with professional eyebrow shaping, trimming, and styling services tailored to your face shape.</p>
+                    <ul class="service-features">
+                        <li>Eyebrow shaping & trimming</li>
+                        <li>Eyebrow tinting</li>
+                        <li>Threading services</li>
+                        <li>Brow consultation</li>
+                    </ul>
+                    <button class="btn btn-book" onclick="bookService('Eyebrow Services', 'Starting from $25')">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>Additional Services</h3>
+                    <p>We offer various other beauty and wellness services to complete your spa experience.</p>
+                    <ul class="service-features">
+                        <li>Hair washing & conditioning</li>
+                        <li>Scalp treatments</li>
+                        <li>Makeup application</li>
+                        <li>Consultation services</li>
+                    </ul>
+                    <button class="btn btn-book" onclick="bookService('Additional Services', 'Prices vary')">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Our Pricing</h2>
+            <p class="section-subtitle">Transparent pricing for all our services</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Hair Services</h3>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>Dreadlock Installation</span>
+                            <span>$80 - $150</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Dreadlock Maintenance</span>
+                            <span>$60 - $100</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Sister Lock Installation</span>
+                            <span>$120 - $200</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Sister Lock Retightening</span>
+                            <span>$80 - $120</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Beauty Services</h3>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>Classic Manicure</span>
+                            <span>$35</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Classic Pedicure</span>
+                            <span>$45</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Gel Manicure</span>
+                            <span>$50</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Mani + Pedi Combo</span>
+                            <span>$75</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Facial & More</h3>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>Basic Facial</span>
+                            <span>$60</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Deep Cleansing Facial</span>
+                            <span>$80</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Eyebrow Shaping</span>
+                            <span>$25</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Eyebrow Tinting</span>
+                            <span>$30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Prices may vary based on hair length, texture, and service complexity. Contact us for a personalized quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Cantona Spa</h2>
+                    <p>At Cantona Spa, we specialize in providing exceptional hair and beauty services with a focus on dreadlocks and sister locks. Our experienced team is passionate about helping you achieve your desired look while maintaining the health and integrity of your hair.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Expert Stylists</h4>
+                                <p>Trained professionals with years of experience in specialized hair techniques</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Quality Care</h4>
+                                <p>We use only premium products and maintain the highest standards of hygiene</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Flexible Hours</h4>
+                                <p>Convenient scheduling to fit your busy lifestyle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Our Professional Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <p class="section-subtitle">Ready to transform your look? Get in touch with us!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@cantonaspa.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Beauty Street<br>Your City, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 9AM-7PM<br>Sat: 9AM-6PM<br>Sun: 10AM-5PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-section">
+                    <h3>Quick Booking</h3>
+                    <p>Click the button below to book your appointment directly through WhatsApp:</p>
+                    <button class="btn btn-whatsapp" onclick="bookGeneralAppointment()">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </button>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cantona Spa</h3>
+                    <p>Your premier destination for dreadlocks, sister locks, and beauty services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Dreadlocks</a></li>
+                        <li><a href="#services">Sister Locks</a></li>
+                        <li><a href="#services">Manicure & Pedicure</a></li>
+                        <li><a href="#services">Facials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+1 (555) 123-4567</p>
+                    <p>info@cantonaspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cantona Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
